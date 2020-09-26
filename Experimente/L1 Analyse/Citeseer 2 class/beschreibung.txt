@@ -1,0 +1,9 @@
+Beschreibung Experiment L1 vs NNL.
+
+In diesem Experiment wird untersucht, wie gut der L1 Loss ist, wenn π exakt bestimmt ist und wieviel Noise der Loss aushält.
+
+Dazu wird ein 2-layer GCN trainiert mit dem L1 Loss. Als Basisloss wir der NLL gewählt. Auf den L1 Loss werden 8 verschieden noise_level addiert. 
+
+Das Interesse besteht darin herauszufinden, nach wieviel Noise der L1 Loss schlechter als der NLL Loss wird.
+
+Für genauere Informationen sehe BA.

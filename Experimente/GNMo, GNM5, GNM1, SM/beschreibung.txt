@@ -1,0 +1,25 @@
+Beschreibung Experiment GNM vs SM:
+
+Wir haben 5 verschiedene Lambdas. Zu jedem Lambda 40 verschiedene Masken. Zu jeder Maske werden die Netze 5 Mal trainiert. Also insgesamt 200 Mal pro Lambda.
+
+Teilnehmende Netze sind:
+1. GNMo: GNM, so wie es im Paper gedacht ist.
+2. GNM5: Es wird jede Epoche ein neues Netz trainiert.
+3. GNM1: Wie GNM0, nur das der Optimizer nicht zurückgesetzt wird
+4. SM: ein 2-Layer GCN wird bis zu 1000 Iterationen trainiert.
+
+.pkl Datei enthält Dictionary mit Lambdas als keys. Setzt man einen key ein erhält man ein Tupel mit vier Listen. 
+
+Liste 1-3 enthalten Tupel (val_acc, unknown_acc, NB_MASK) von GNM. 
+Liste 4 enthält (val_acc, unknown_acc, last_iteration, NB_MASK) von SM.
+
+NB_MASK is there to reconstruct which mask is used.
+last_iteration is the number of the last iteration of SM before stopping. If < 1000 early stopping was activated.
+
+
+FAZIT:
+
+Das Experiment wurde nach 600 Trainings abgebrochen, da Fehler gemacht wurden.
+Die F.nll_loss Funktion berechnet überraschenderweise nicht den log, sondern erwartet, dass dieser bereits gegeben ist. Z.B. durch log_softmax. Da das nicht der Fall war, wurde sie hier als eine Loss-Funktion benutzt, die stets negative Werte annahm, was aus mysteriösen Gründen sogar etwas besser war. 
+
+RIESEN FEHLER: Tatsächlich ist GNMo doch normales GNM1 gewesen!

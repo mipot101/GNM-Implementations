@@ -1,0 +1,4 @@
+Wir haben zwei verschieden pi-Funktionen:
+
+Für pi0 wurde jeweils eine 0 angehangen
+Für pi1 eine 1.
