@@ -12,3 +12,7 @@ Included are the datasets 'Cora' and 'Citeseer' from the `"Revisiting Semi-Super
 Those are accessible at https://github.com/kimiyoung/planetoid/raw/master/data. I do not own any rights to those.
 
 The architecture of Graph Convolution Networks (Thomas N. Kipf, Max Welling ICLR 2017) is used.
+
+## Replicating experiments
+
+To replicate the experiments it is necessary to copy those in the root folder of this repo.
