@@ -1,9 +1,0 @@
-Beschreibung Experiment GNM vs SM:
-
-Es wurden 7 verschiedene Masken verglichen. Die Verhältnisse von Klasse 0 zu Klasse 1 in den Trainingsdaten waren dabei: 1 - 2.5
-
-Zu einem Verhältnis wurde jeweils nur eine Maske genutzt. Es ist anzunehmen, dass das die Testergebnisse beeinträchtigt hat. Daher sollte ein neues Experiment durchgeführt werden, indem die Masken oft bis immer gewechselt werden. 
-
-Pro Maske wurden 120 Netze trainiert. Das sollten genügend sein.
-
-.pkl Datei enthält Dictionary mit Lambdas als keys. Setzt man einen key ein erhält man ein Tupel mit zwei Listen. Liste1 enthält Tupel mit val_acc und unknown_acc von GNM. Liste 2 enthält dasselbe von SM und als drittes Tupel jeweils nach wievielen Iterationen der Algorithmus gestoppt hat.

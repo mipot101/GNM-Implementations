@@ -7,6 +7,8 @@ import time
 import copy
 import sys
 
+from .networks import *
+
 '''
 This file consists mainly of methods to assist gnm.py
 '''
