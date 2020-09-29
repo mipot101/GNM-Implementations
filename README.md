@@ -15,4 +15,4 @@ The architecture of Graph Convolution Networks (Thomas N. Kipf, Max Welling ICLR
 
 ## Replicating experiments
 
-To replicate the experiments it is necessary to copy those in the root folder of this repo.
+To replicate an experiment it is necessary that the notebook and the GNM_Toolbox are in the same directory. Therefore you can either copy the experiment in the root folder or place a duplicate of the GNM_Toolbox in the directory of the notebook.
